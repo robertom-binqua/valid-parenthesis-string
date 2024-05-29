@@ -4,26 +4,31 @@ This README would normally document whatever steps are necessary to get your app
 
 ### What is this repository for? ###
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+Given a string s containing only three types of characters: '(', ')' and '*', return true if s is valid.
 
-### How do I get set up? ###
+The following rules define a valid string:
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+Any left parenthesis '(' must have a corresponding right parenthesis ')'.
+Any right parenthesis ')' must have a corresponding left parenthesis '('.
+Left parenthesis '(' must go before the corresponding right parenthesis ')'.
+'*' could be treated as a single right parenthesis ')' or a single left parenthesis '(' or an empty string "".
+ 
 
-### Contribution guidelines ###
+Example 1:
 
-* Writing tests
-* Code review
-* Other guidelines
+Input: s = "()"
+Output: true
+Example 2:
 
-### Who do I talk to? ###
+Input: s = "(*)"
+Output: true
+Example 3:
 
-* Repo owner or admin
-* Other community or team contact
+Input: s = "(*))"
+Output: true
+ 
+
+Constraints:
+
+1 <= s.length <= 100
+s[i] is '(', ')' or '*'.
