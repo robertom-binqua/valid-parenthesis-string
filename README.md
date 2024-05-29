@@ -32,3 +32,23 @@ Constraints:
 
 1 <= s.length <= 100
 s[i] is '(', ')' or '*'.
+
+org.binqua.examples.parenthesisstring.SolutionSpec:
++ adsf invalid 0.023s
++ () valid 0.0s
++ (()) valid 0.0s
++ (()()) valid 0.0s
++ (()())()() valid 0.001s
++ (( invalid 0.0s
++ )) invalid 0.0s
++ ) invalid 0.0s
++ (* valid 0.0s
++ ** valid 0.001s
++ *( invalid 0.0s
++ **** valid 0.0s
++ *** valid 0.0s
++ (()))) invalid 0.0s
++ (())* valid 0.001s
++ ((((((((())))))))) valid 0.0s
++ (((((((((*)))))))))))((*) valid 0.0s
++ (((((*(()((((*((**(((()()*)()()()*((((**)())*)*)))))))(())(()))())((*()()(((()((()*(())*(()**)()(()) invalid 0.002s
